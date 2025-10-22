@@ -1,9 +1,21 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import shopcart from "../assets/shopcart2.jpg";
 import "./CartPage.css";
 
 export default function CartPage({ cartItems, removes }) {
   if (!cartItems || cartItems.length === 0) {
-    return <h2 className="empty-cart">No products in cart!</h2>;
+    return (
+      <div className="empty-cart-container">
+        <img src={shopcart} alt="" className="shopcart" />
+        <h4 className="empty-cart">Your Cart is empty</h4>
+        <p>Just relax, let us help you find some first-class products</p>
+        <button className="shop-btn">
+          <NavLink to="/" className="shop-btns">
+            Start Shopping
+          </NavLink>
+        </button>
+      </div>
+    );
   }
 
   const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0);
@@ -29,11 +41,11 @@ export default function CartPage({ cartItems, removes }) {
                 <p>Delivery: {product.delivery}</p>
                 <div className="cart-item-buttons">
                   <button onClick={() => removes(product.id)}>Remove</button>
-                  <Link to="/buynow" state={{ product }}>
+                  <NavLink to="/buynow" state={{ product }}>
                     <button>Proceed to Buy</button>
-                  </Link>
+                  </NavLink>
                 </div>
-                <Link to="/">← Continue Shopping</Link>
+                <NavLink to="/">← Continue Shopping</NavLink>
               </div>
             </div>
           ))}
