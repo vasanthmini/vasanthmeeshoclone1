@@ -1,8 +1,7 @@
 import { useParams, Link,useNavigate } from "react-router-dom";
 import prodata from "../data/prodata.json";
-import prodetail from "../data/prodetail.json";
+import prodetail from "../data/Prodetail.json";
 
-// import prodetail from "../data/prodetail.json";
 
 
 import dis from "../assets/dis.webp";
