@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "image": "/dress1.webp"
+  },
+  {
+    "id": 2,
+    "image": "/men.webp"
+  },
+  {
+    "id": 3,
+    "image": "/kids.webp"
+  },
+  {
+    "id": 4,
+    "image": "/kitchen.webp"
+  },
+  {
+    "id": 5,
+    "image": "/foot.webp"
+  },
+  {
+    "id": 6,
+    "image": "/care.webp"
+  },
+  {
+    "id": 7,
+    "image": "/sarees.webp"
+  },
+  {
+    "id": 8,
+    "image": "/western.webp"
+  },
+  {
+    "id": 9,
+    "image": "/bag.webp"
+  },
+  {
+    "id": 10,
+    "image": "/jewel.webp"
+  },
+  {
+    "id": 11,
+    "image": "/skin.webp"
+  }
+ 
+]

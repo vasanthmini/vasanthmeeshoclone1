@@ -1,0 +1,81 @@
+.cart-page {
+  padding: 20px;
+}
+
+.cart-title {
+  margin-bottom: 20px;
+}
+
+/* Flex container for items and summary */
+.cart-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cart items */
+.cart-items {
+  flex: 2;
+  min-width: 300px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+}
+
+.cart-item-img {
+  width: 150px;
+  object-fit: contain;
+}
+
+.cart-item-details h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+}
+
+.cart-item-details p {
+  margin: 4px 0;
+}
+
+.cart-item-buttons button {
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
+
+/* Sticky Cart summary on the right */
+.cart-summary {
+  flex: 1;
+  min-width: 250px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+  height: fit-content;
+  position: sticky;
+  top: 20px; /* stays 20px from top when scrolling */
+}
+
+.cart-summary h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.summary-row.total {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Empty cart style */
+.empty-cart {
+  text-align: center;
+  margin-top: 40px;
+}
