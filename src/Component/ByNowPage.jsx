@@ -1,4 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
+import "./CartPage.css";
 
 export default function BuyNowPage() {
   const location = useLocation();
@@ -9,16 +10,27 @@ export default function BuyNowPage() {
   }
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>💳 Checkout Page</h1>
-      <img src={product.image} alt={product.title} width="200" />
-      <h2>{product.title}</h2>
-      <p>Price: ₹{product.price}</p>
-      <p>Delivery: {product.delivery}</p>
-      <h3>Total Amount: ₹{product.price}</h3>
-      <Link to="/">
-        <button>Confirm Order</button>
-      </Link>
-    </div>
+    
+     <div className="cart-items">
+          <h4 className="cart-title">Purchase Details</h4>
+
+            <div className="cart-item" key={product.id}>
+              <img
+                src={product.image}
+                alt={product.title}
+                className="cart-item-img"
+              />
+              <div className="cart-item-details">
+                <h2>{product.title}</h2>
+                <p>Price: ₹{product.price}</p>
+                <p>Delivery: {product.delivery}</p>
+               
+                <Link to="/" className="Continue-Shopping">
+                  confirm order
+                </Link>
+              </div>
+            </div>
+          
+        </div>
   );
 }

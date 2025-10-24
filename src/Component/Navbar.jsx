@@ -44,11 +44,11 @@ export default function Navbar({count,click}) {
             </div>
             <div className="nav-item">
               <FontAwesomeIcon icon={faUser} className="icon" />
-              <p>Profile</p>
+              <p>Profile </p>
             </div>
-            <div className="nav-item">
+            <div className="nav-item" onClick={() => click()}>
               <FontAwesomeIcon icon={faShoppingCart} className="icon" />
-              <p onClick={() => click()}>Cart ({count})</p>
+              <p>Cart ({count})</p>
             </div>
           </div>
         </div>

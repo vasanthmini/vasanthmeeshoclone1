@@ -42,7 +42,9 @@ function App() {
         <Route path="/:id" element={<ProductDetailPage addcart={addone} />} />
         <Route
           path="/cart"
-          element={<CartPage cartItems={cartItems} removes={remove} />}
+          element={
+            <CartPage count={cartss} cartItems={cartItems} removes={remove} />
+          }
         />
         <Route path="/buynow" element={<BuyNowPage />} />
       </Routes>
