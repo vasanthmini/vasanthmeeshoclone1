@@ -7,10 +7,13 @@ import prodata from "../data/prodata.json";
 import { useState } from "react";
 
 export default function Navbar({count,click}) {
-  const [search,setSearch]=useState([])
-  const searchdata=prodata.find((item)=>{
-    item.title.toLowerCase().includes(search.toLowerCase)
-  })
+  
+  
+      const [search, setSearch] = useState("");
+      
+      const filteredProducts = prodata.filter((product) =>
+          product.title.toLowerCase().includes(search.toLowerCase())
+        );
 
   return (
     <>

@@ -33,7 +33,9 @@ function App() {
   return (
     <div>
       {/* Navbar always visible */}
-      <Navbar count={cartss} click={cartdet} />
+  <div className="sticky">      
+   <Navbar count={cartss} click={cartdet} />
+  </div>      
 
       {/* Define routes */}
       <Routes>

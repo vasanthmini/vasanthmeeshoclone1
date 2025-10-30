@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -258,6 +259,8 @@ const filteredProducts = prodata.filter((product) =>
           </div>
         </div>
       </div>
+            <Footer />
+      
     </>
   );
 }

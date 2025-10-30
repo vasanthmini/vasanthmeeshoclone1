@@ -1063,14 +1063,6 @@
     "rating": 4.2,
     "delivery": "Free Delivery",
     "review": "3123 reviews"
-  },
-  {
-    "id": 117,
-    "title": "Blue Shoes",
-    "image": "/shoes11.jpg",
-    "price": 445,
-    "rating": 4.2,
-    "delivery": "Free Delivery",
-    "review": "3123 reviews"
   }
+
 ]

@@ -23,7 +23,7 @@ export default function ProductDetailPage({ addcart }) {
     setTimeout(() => {
       addcart(product);
       navigate("/product2");
-    }, 1000);
+    }, 500);
   };
 
   // Buy now handler with loader
@@ -31,7 +31,7 @@ export default function ProductDetailPage({ addcart }) {
     setLoading(true);
     setTimeout(() => {
       navigate("/buynow", { state: { product } });
-    }, 1000);
+    }, 500);
   };
 
   // Show full-page loader
